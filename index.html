@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>hello world</title>
+    <link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/response.css">
+		<link rel="stylesheet" href="css/font.css">
+		<script src="js/zepto.js"></script>
+		<script src="js/mui.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/index.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+      		$(".footer").on("tap",".setting",function(){
+      			var setting=plus.webview.create("_www/html/set.html","",{width:"60%"});
+      			setting.show("slide-in-left");
+      			var win=plus.webview.getLaunchWebview();//获取应用首页WebviewObject窗口对象
+      			win.setStyle({mask:"rgba(0,0,0,.6)"});//获取启动窗口   加遮罩
+      			win.addEventListener("maskClick",function(){
+      				win.setStyle({mask:"none"});
+      				setting.close("slide-out-left");
+      			})
+      		})
+
+
+      	})
+   		
+    </script>
+    <style>
+    	.tou{
+    		height:44px;text-align: center;line-height: 44px;width:100%;background: #ccc;
+    	}
+    </style>
+</head>
+<body>
+<!--头部开始-->
+<header>
+	<div class="tou">
+		新闻
+	</div>
+	<!--<div class="container-fluid header">
+		<div class="con">
+			<div class="header-fenlei">
+				<a href="">头条</a>
+				<a href="">推荐</a>
+				<a href="">娱乐</a>
+				<a href="">体育</a>
+				<a href="">财经</a>
+				<a href="">汽车</a>
+				<a href="">科技</a>				
+				<a href="">搞笑</a>
+				<a href="">山西</a>
+			</div>
+			<div class="add"></div>
+			<div style="clear: both"></div>
+		</div>
+	</div>-->
+
+</header>
+<!--头部结束-->
+
+
+<!--footer开始-->
+<footer>
+	<div class="container-fluid footer">
+		<div class="row">
+			<div class="col-s-3" data-icon="xinwen" icon-pos="top">新闻</div>
+			<div class="col-s-3" data-icon="tupian" icon-pos="top">图片</div>
+			<div class="col-s-3" data-icon="shipin" icon-pos="top">视频</div>
+			<div class="col-s-3 setting" data-icon="wode" icon-pos="top">我的</div>
+		</div>
+	</div>
+</footer>
+<!--footer结束-->
+</body>
+</html>

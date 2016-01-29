@@ -1,0 +1,75 @@
+body{
+    margin:0;padding:0;font-family: "微软雅黑";
+}
+ul,li,p,h1,h2,h3,h4,h5,h6{
+    font-weight: normal;padding:0;margin:0;
+}
+li,i{
+    list-style: none;font-style: normal;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.gh-img{
+    width:100%;height:100%;
+}
+.con{
+    padding:0 10px;margin:0 auto;
+}
+/*头部开始*/
+.con-header{
+    padding:0 30px;margin:0 auto;
+}
+.header{
+    height:44px;font-size: 14px;color:#000;background:#ddd;line-height: 44px;position:fixed;top:0;left:0;
+}
+.con-header .row>div[class*=col]{
+    text-align: center;box-sizing: content-box;
+}
+.con-header .row>div[class*=col]:hover{
+    color:red;border-bottom: 1px solid red;
+}
+/*头部结束*/
+
+/*列表开始*/
+body{
+    background: #ddd;
+}
+.list{
+    height:390px;background: #ddd;border:1px solid red;margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.list-img1>div{
+    height:200px;border-bottom:2px solid white;overflow: hidden;
+}
+.list-img2>div{
+    height:100px;border-right:2px solid #fff;overflow: hidden;
+}
+.list-img2>div:nth-last-child(1){
+    border-right: none;
+}
+.list .row:nth-child(3){
+    padding:12px 8px;
+}
+.list .row:nth-child(3) h4{
+    font-size: 16px;font-weight: 800;margin-bottom: 6px;
+}
+.list .row:nth-child(3) p{
+    font-size: 12px;line-height: 18px;
+}
+/*列表结束*/
+
+
+/*footer开始*/
+.footer{
+    position: fixed;bottom:0;left:0;
+}
+.footer .row{
+    height:50px;text-align: center;background: #ddd;line-height: 25px;
+    font-size: 14px;border-top:1px solid #C1C1C1;
+
+}
+/*footer结束*/
